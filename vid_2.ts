@@ -1,10 +1,9 @@
-let a
+let user_ID: number = 112
 
-function Geta() {
-  return '12'
-}
+console.log(user_ID)
 
-a = Geta()
-console.log(a);
+let roll = 112
+
+console.log(roll)
 
 export {}

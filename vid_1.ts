@@ -1,12 +1,7 @@
-let name: string = 'Sabed Barbhuiya'
-let l: number = name.length
-console.log(name, l)
+let greeting: string = 'Hello World'
 
-let isLoggedIn: boolean = true
-console.log('Boolean', isLoggedIn.valueOf())
+// greeting = 121 // error
 
-let n = 10
-// n = 'Ten'
-console.log(n)
+console.log(greeting.length)
 
 export {}

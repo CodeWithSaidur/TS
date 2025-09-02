@@ -1,18 +1,14 @@
-function add(a: number) {
-  return a - 10
-}
-console.log(add(10))
+// any
 
-function getUpper(a: string) {
-  return a.toLocaleUpperCase()
+let a: any = 10
+a = 'hello' // not recommended
+console.log(a)
+// ----------------------------------------
+let c: string
+function b() {
+  return '10'
 }
-console.log(getUpper('hello'))
-
-const sub = (a: number, b: number, c: number = 0) => {
-  return a - b - c
-}
-
-console.log(sub(10, 5, 2))
-console.log(sub(10, 5))
+c = b()
+console.log(c)
 
 export {}

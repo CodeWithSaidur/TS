@@ -1,16 +1,13 @@
 "use strict";
-// function add(a: number) {
-//   return a - 10
-// }
-// console.log(add(10))
+// any
 Object.defineProperty(exports, "__esModule", { value: true });
-// function getUpper(a: string) {
-//   return a.toLocaleUpperCase()
-// }
-// console.log(getUpper('hello'))
-var sub = function (a, b, c) {
-    if (c === void 0) { c = 0; }
-    return a - b - c;
-};
-console.log(sub(10, 5, 2));
-console.log(sub(10, 5));
+var a = 10;
+a = 'hello'; // not recommended
+console.log(a);
+// ----------------------------------------
+var c;
+function b() {
+    return '10';
+}
+c = b();
+console.log(c);

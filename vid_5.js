@@ -1,23 +1,10 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-function add(params) {
-    return params + 10;
+// adb functions
+function random_3() {
+    var val = ['Hello World!', true, 123];
+    var i = Math.random() * val.length;
+    console.log(typeof val);
+    return val[Math.floor(i)];
 }
-// console.log(add(10))
-function getUpper(params) {
-    return params.toLocaleUpperCase();
-}
-// console.log(getUpper('hello'))
-// console.log(getUpper(10)); // error
-function signUp(name, email, isPaid) {
-    if (name === void 0) { name = 'N/A'; }
-    if (email === void 0) { email = 'N/A'; }
-    if (isPaid === void 0) { isPaid = false; }
-    return {
-        name: name,
-        email: email,
-        isPaid: isPaid
-    };
-}
-var a = signUp('John', '', true);
-console.log(a);
+console.log(random_3());
