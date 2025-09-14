@@ -13,8 +13,16 @@ var sabed = {
 // ---------------------------------------------------------------------------------
 function Err(id) {
     if (typeof id === 'number') {
-        return id / 2;
+        return id;
     }
-    return id;
+    return id.toUpperCase();
 }
-console.log(Err('123'));
+// console.log(Err('123'))
+// array
+var arr1 = [1, 2, 3];
+var arr2 = ['123', 21]; // And
+var arr3 = ['1', '2', '3']; // Or
+var pi = 3.14;
+console.log(pi);
+var n;
+n = 'a';

@@ -8,4 +8,12 @@ function random_3(): string | number | boolean {
 console.log(random_3())
 // -----------------------------------------------------------------
 
+const heros = ['ironman', 'thor', 'spiderman', 'hulk']
+function H(): string[] {
+  return heros.map((hero): string => {
+    return `Hero is ${hero}`
+  })
+}
+console.log(H())
+
 export {}
