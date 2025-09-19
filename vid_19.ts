@@ -4,9 +4,9 @@
 
 class Coffee {
   constructor(
-    public name: string, // public by default accessible anywhaer (inside a class , outside a class, child class)
-    private recipe: string, // accessable only inside a class where its declared
-    protected ingredients: string // accessable inside the class and its child classes
+    public name: string,
+    private recipe: string,
+    protected ingredients: string
   ) {
     this.name = name
     this.recipe = recipe
@@ -19,12 +19,18 @@ class Coffee {
 }
 
 class SpeialCoffee extends Coffee {
-  constructor(name: string, recipe: string, ingredients: string) {
+  constructor(
+    name: string,
+    recipe: string,
+    ingredients: string,
+    public tag: string,
+    public off: number
+  ) {
     super(name, recipe, ingredients)
   }
 
   specialServe() {
-    return `Your ${this.name} special is ready`
+    return `Your ${this.name} special is ready tag ${this.tag} off ${this.off}%`
   }
 }
 
@@ -34,7 +40,8 @@ console.log(c1.normalServe())
 console.log(c1)
 
 // --------------------- Use ----------------------
-let sc1 = new SpeialCoffee('Latte', '123', '123')
+let sc1 = new SpeialCoffee('Latte', '123', '123', 'Chocolate', 50)
 console.log(sc1.normalServe())
 console.log(sc1.specialServe())
+
 export {}
